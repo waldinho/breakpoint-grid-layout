@@ -14,7 +14,7 @@ h2 {
 }
 
 p {
-    background: #f5f5f5;
+    background: #e1e1e1;
     font-family: sans-serif;
     font-size: 85%;
     line-height: 2em;
@@ -59,12 +59,12 @@ p {
 
 .article-3 p {
     height: 225px !important;
-    background: #f5f5f5;
+    background: #e1e1e1;
 }
 
 .article-33 p {
     height: 205px !important;
-    background: #f5f5f5;
+    background: #e1e1e1;
 }
 
 .article-4 p {
@@ -88,7 +88,7 @@ p {
 
 .hero-5 p {
     height: 430px;
-    background: #f5f5f5;
+    background: #e1e1e1;
 }
 
 .mpu p {
@@ -129,6 +129,19 @@ p {
     overflow: hidden;
     background: url("../img/skin-main.png") no-repeat center;
     z-index: -1;
+}
+
+#backgroundRoll {
+    width: 980px;
+    height: 246px;
+    overflow: hidden;
+    z-index: -1;
+    background-color: red;
+    margin: 10px auto;
+}
+
+#backgroundRoll p {
+    background-color: red;
 }
 
 [class*='grid-'] {
