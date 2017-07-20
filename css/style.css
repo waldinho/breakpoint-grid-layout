@@ -162,9 +162,12 @@ p {
     [class*='grid-'] {
         float: left;
     }
+    #backgroundRoll {
+        display: none;
+    }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 719px) {
     .container {
         width: 100%;
     }
@@ -172,6 +175,9 @@ p {
         display: none;
     }
     #backgroundTop {
+        display: none;
+    }
+    #backgroundRoll {
         display: none;
     }
     [class*='grid-'] {
