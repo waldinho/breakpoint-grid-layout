@@ -1,5 +1,5 @@
 AuthName "Restricted Area" 
 AuthType Basic 
-AuthUserFile /protect/.htpasswd 
+AuthUserFile /home//protect/.htpasswd 
 AuthGroupFile /dev/null 
 require valid-user
