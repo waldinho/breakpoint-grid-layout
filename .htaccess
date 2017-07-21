@@ -1,5 +1,5 @@
-AuthName "Restricted Area" 
-AuthType Basic 
-AuthUserFile /home/protect/.htpasswd 
-AuthGroupFile /dev/null 
+AuthUserFile /home/protect/.htpasswd
+AuthName "Login Area"
+AuthType Basic
+
 require user dev
