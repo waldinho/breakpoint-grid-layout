@@ -125,6 +125,10 @@ img {
     margin-top: -20px;
 }
 
+.margin-top-50 {
+    margin-top: 60px;
+}
+
 
 /* Site takeover skin  */
 
@@ -147,8 +151,8 @@ img {
 }
 
 #backgroundRoll {
-    width: 980px;
-    height: 246px;
+    max-width: 980px;
+    /*height: 246px;*/
     overflow: hidden;
     z-index: -1;
     margin: 80px auto 0 auto;
@@ -161,6 +165,10 @@ img {
 
 [class*='grid-'] {
     float: left;
+}
+
+.mobile {
+    display: none
 }
 
 @media (max-width: 1024px) {
@@ -176,9 +184,9 @@ img {
     [class*='grid-'] {
         float: left;
     }
-    #backgroundRoll {
+    /*#backgroundRoll {
         display: none;
-    }
+    }*/
 }
 
 @media (max-width: 719px) {
@@ -192,9 +200,20 @@ img {
         display: none;
     }
     #backgroundRoll {
-        display: none;
+        max-width: 320px;
+        margin: 70px auto 0 auto;
     }
     [class*='grid-'] {
         float: none;
+    }
+    .mobile {
+        display: block
+    }
+    .desktop {
+        display: none;
+    }
+    .half {
+        width: 50%;
+        float: left;
     }
 }
