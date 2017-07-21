@@ -1,5 +1,0 @@
-AuthUserFile /home/protect/.htpasswd
-AuthName "Login Area"
-AuthType Basic
-
-require user dev
