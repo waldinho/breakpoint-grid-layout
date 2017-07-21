@@ -25,17 +25,30 @@ p {
     min-height: 120px;
 }
 
+img {
+    width: 100%
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-bottom: 20px
+}
+
 .zero p {
     background: #0f284b;
 }
 
-.title p {
+.title {
     text-align: center;
     min-height: 55px;
+    margin-top: 25px;
+    overflow: hidden;
 }
 
 .mpu {
-    width: 250px;
+    width: 320px;
     margin: 0 auto;
     float: none;
 }
@@ -121,6 +134,7 @@ p {
     height: 246px;
     overflow: hidden;
     z-index: -1;
+    margin-top: 20px;
 }
 
 #backgroundTop {
@@ -137,8 +151,8 @@ p {
     height: 246px;
     overflow: hidden;
     z-index: -1;
-    background-color: red;
-    margin: 10px auto;
+    margin: 80px auto 0 auto;
+    text-align: center;
 }
 
 #backgroundRoll p {

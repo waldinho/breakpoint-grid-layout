@@ -29,6 +29,7 @@
     margin: 0 auto;
     width: 1000px;
     margin-top: -10px;
+    background: #fff;
 }
 
 .container:after,
@@ -180,7 +181,7 @@
         width: 8.33%;
     }
     .fixed {
-        width: 470px;
+        width: 395px;
     }
     .fixed3 {
         width: 193px;
@@ -236,7 +237,7 @@
         width: 8.33%;
     }
     .fixed {
-        width: 750px;
+        width: 680px;
     }
     .fixed3 {
         width: 333px;
