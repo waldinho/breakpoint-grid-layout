@@ -167,9 +167,14 @@ img {
     display: none
 }
 
+.tablet {
+    display: none
+}
+
 @media (max-width: 1024px) {
     .container {
         width: 720px;
+        margin-top: 20px;
     }
     #backgroundHero {
         display: none;
@@ -179,6 +184,31 @@ img {
     }
     [class*='grid-'] {
         float: left;
+    }
+    .full {
+        width: 100%
+    }
+    .no-tablet {
+        display: none;
+    }
+    .tablet {
+        display: block
+    }
+    .half-tablet {
+        width: 50%;
+        float: left;
+    }
+    .no-float {
+        float: none;
+    }
+    .left {
+        float: left;
+    }
+    .margin-top-minus-150 {
+        margin-top: -150px;
+    }
+    .clear-tablet {
+        clear: both;
     }
     /*#backgroundRoll {
         display: none;
