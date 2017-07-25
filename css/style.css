@@ -33,7 +33,14 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    padding-bottom: 20px
+    margin-bottom: 20px;
+    background: #000;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-img {
+    width: 1000px;
 }
 
 .zero p {
@@ -182,6 +189,10 @@ img {
     #backgroundTop {
         display: none;
     }
+    #backgroundRoll {
+        max-width: 720px;
+        margin: 70px auto -40px auto;
+    }
     [class*='grid-'] {
         float: left;
     }
@@ -209,6 +220,9 @@ img {
     }
     .clear-tablet {
         clear: both;
+    }
+    .nav-img {
+        width: 720px;
     }
     /*#backgroundRoll {
         display: none;
@@ -247,5 +261,9 @@ img {
     }
     .tablet {
         display: none;
+    }
+    .nav-img {
+        width: 380px;
+        margin: 0 auto;
     }
 }
