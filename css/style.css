@@ -191,7 +191,7 @@ img {
     }
     #backgroundRoll {
         max-width: 720px;
-        margin: 70px auto -40px auto;
+        margin: 70px auto -25px auto;
     }
     [class*='grid-'] {
         float: left;
