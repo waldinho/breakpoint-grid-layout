@@ -224,6 +224,9 @@ img {
     .nav-img {
         width: 720px;
     }
+    .no-tablet-no-mob {
+        display: none;
+    }
     /*#backgroundRoll {
         display: none;
     }*/
@@ -232,6 +235,7 @@ img {
 @media (max-width: 719px) {
     .container {
         width: 100%;
+        margin-top: 0px;
     }
     #backgroundHero {
         display: none;
@@ -262,8 +266,20 @@ img {
     .tablet {
         display: none;
     }
+    .no-tablet {
+        display: block;
+    }
+    .no-tablet-no-mob {
+        display: none;
+    }
     .nav-img {
         width: 380px;
         margin: 0 auto;
+    }
+    .margin-top-minus-150 {
+        margin-top: 0px;
+    }
+    .half-tablet {
+        width: 100%;
     }
 }
