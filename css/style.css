@@ -49,29 +49,29 @@ img {
 
 .title {
     text-align: center;
-    min-height: 55px;
-    margin-top: 55px;
+    min-height: 25px;
+    margin-top: 25px;
     overflow: hidden;
 }
 
 .title1 {
     text-align: center;
-    min-height: 55px;
-    margin-top: 65px;
+    min-height: 25px;
+    margin-top: 25px;
     overflow: hidden;
 }
 
 .title2 {
     text-align: center;
-    min-height: 55px;
+    min-height: 25px;
     margin-top: 20px;
     overflow: hidden;
 }
 
 .title3 {
     text-align: center;
-    min-height: 55px;
-    margin-top: 5px;
+    min-height: 25px;
+    margin-top: 15px;
     overflow: hidden;
 }
 
@@ -302,5 +302,23 @@ img {
     }
     .half-tablet {
         width: 100%;
+    }
+    .title1 {
+        text-align: center;
+        min-height: 55px;
+        margin-top: 65px;
+        overflow: hidden;
+    }
+    .title2 {
+        text-align: center;
+        min-height: 55px;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    .title3 {
+        text-align: center;
+        min-height: 55px;
+        margin-top: 5px;
+        overflow: hidden;
     }
 }
