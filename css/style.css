@@ -87,6 +87,11 @@ img {
     float: none;
 }
 
+.mpu2 {
+    margin: 0 auto;
+    float: none;
+}
+
 .hero-dmpu p {
     height: 400px;
 }
@@ -249,6 +254,11 @@ img {
     .no-tablet-no-mob {
         display: none;
     }
+    .mpu2 {
+        width: 333px;
+        margin: 0 auto;
+        float: left;
+    }
     /*#backgroundRoll {
         display: none;
     }*/
@@ -319,5 +329,10 @@ img {
     .title3 {
         min-height: 55px;
         margin-top: 5px;
+    }
+    .mpu2 {
+        width: 100%;
+        margin: 0 auto;
+        float: left;
     }
 }
