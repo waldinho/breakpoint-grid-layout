@@ -216,6 +216,7 @@ img {
     }
     [class*='grid-'] {
         float: left;
+        background: #fff;
     }
     .full {
         width: 100%
