@@ -187,7 +187,12 @@ img {
 }
 
 #mpu0 {
-    padding-top: 75px;
+    padding: 10px 20px 0 10px;
+}
+
+#mpu06 {
+    padding: 10px 10px 0 0;
+    float: right;
 }
 
 #mpu01 {

@@ -15,6 +15,59 @@
     <link rel="stylesheet" href="css/rwdgrid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        // inSkin targeting var
+        var fn_pageskin = "no";
+        var es_GPT = "/71347885/_main_eveningstandard/es_grid";
+
+        if (screen.width >= 1280) {
+            fn_pageskin = "yes";
+        }
+
+        googletag.cmd.push(function() {
+            googletag.defineSlot(es_GPT, [
+                    [728, 90],
+                    [970, 250]
+                ], "leaderboard")
+                .addService(googletag.pubads())
+                .setTargeting("inskin", fn_pageskin)
+                .setTargeting("tile", "leaderboard");
+
+            googletag.defineSlot(es_GPT, [300, 600], "mpu06")
+                .addService(googletag.pubads())
+                .setTargeting("tile", "mpu06");
+
+            googletag.defineSlot(es_GPT, [300, 600], "mpu01")
+                .addService(googletag.pubads())
+                .setTargeting("tile", "mpu01");
+
+            googletag.defineSlot(es_GPT, [300, 600], "mpu02")
+                .addService(googletag.pubads())
+                .setTargeting("tile", "mpu02");
+
+            googletag.defineSlot(es_GPT, [300, 250], "mpu03")
+                .addService(googletag.pubads())
+                .setTargeting("tile", "mpu03");
+
+            googletag.defineSlot(es_GPT, [300, 250], "mpu04")
+                .addService(googletag.pubads())
+                .setTargeting("tile", "mpu04");
+
+            googletag.defineSlot(es_GPT, [300, 250], "mpu05")
+                .addService(googletag.pubads())
+                .setTargeting("tile", "mpu05");
+
+            googletag.defineOutOfPageSlot(es_GPT, "outofpageslot")
+                .addService(googletag.pubads())
+                .setTargeting("tile", "outofpageslot");
+
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -53,9 +106,12 @@
                 </div>
             </div>
         </div>
-        <div class="grid-3 mpu hero-dmpu">
-            <img src="img/mpu.png" class="desktop" />
-            <img src="img/mpu2.png" class="mobile" />
+        <div id="mpu06">
+            <script>
+                googletag.cmd.push(function() {
+                    googletag.display("mpu06");
+                });
+            </script>
         </div>
         <div style="clear:both"></div>
         <div class="grid-3 article-4">
@@ -82,8 +138,12 @@
             <img src="img/title-row7.png" class="desktop" />
             <img src="img/title-row7-mob.png" class="mobile" />
         </div>
-        <div class="grid-4 article-3 mpu1">
-            <img src="img/mpu2.png" />
+        <div id="mpu04">
+            <script>
+                googletag.cmd.push(function() {
+                    googletag.display("mpu04");
+                });
+            </script>
         </div>
         <div class="grid-4 article-3 half-tablet">
             <img src="img/music1.png" class="no-tablet-no-mob" />
@@ -107,8 +167,12 @@
             <img src="img/article-3-4-mob.png" class="tablet" />
             <img src="img/music4-mob.png" class="mobile" />
         </div>
-        <div class="grid-4 article-3 mpu1 left">
-            <img src="img/mpu2.png" class="margin-top-minus-150" />
+        <div id="mpu05">
+            <script>
+                googletag.cmd.push(function() {
+                    googletag.display("mpu05");
+                });
+            </script>
         </div>
         <div class="grid-12">
             <img src="img/title-row8.png" class="desktop" />
@@ -165,6 +229,13 @@
             <img src="img/arts2.png" class="desktop" />
             <img src="img/arts2-mob.png" class="mobile" />
         </div>
+    </div>
+    <div id="outofpageslot">
+        <script>
+            googletag.cmd.push(function() {
+                googletag.display("outofpageslot");
+            });
+        </script>
     </div>
 </body>
 
