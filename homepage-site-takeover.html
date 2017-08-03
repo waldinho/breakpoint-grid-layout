@@ -64,6 +64,10 @@
                 .addService(googletag.pubads())
                 .setTargeting("tile", "outofpageslot");
 
+            googletag.defineSlot(es_GPT, [3, 3], 'thirdparty01')
+                .addService(googletag.pubads())
+                .setTargeting("tile", "thirdparty01");
+
             googletag.pubads().enableSingleRequest();
             googletag.enableServices();
         });
@@ -79,17 +83,17 @@
         <img src="img/nav.png" class="desktop nav-img" />
         <img src="img/nav-mob.png" class="mobile nav-img" />
     </div>
-    <div id="backgroundHero" data-ism-event="1" data-ism-state="1">
+    <!--<div id="backgroundHero" data-ism-event="1" data-ism-state="1">
     </div>
     <div id="backgroundTop" data-ism-event="1" data-ism-state="1">
-    </div>
-    <!--<div id="leaderboard">
+    </div>-->
+    <div id="leaderboard">
         <script>
             googletag.cmd.push(function() {
                 googletag.display("leaderboard");
             });
         </script>
-    </div>-->
+    </div>
     <div class="container">
         <div class="container">
             <div class="grid-12 title1">
@@ -341,6 +345,13 @@
             <script>
                 googletag.cmd.push(function() {
                     googletag.display("outofpageslot");
+                });
+            </script>
+        </div>
+        <div id="thirdparty01">
+            <script>
+                googletag.cmd.push(function() {
+                    googletag.display("thirdparty01");
                 });
             </script>
         </div>
