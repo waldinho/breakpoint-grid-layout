@@ -15,6 +15,35 @@
     <link rel="stylesheet" href="css/rwdgrid.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        // inSkin targeting var
+        var fn_pageskin = "no";
+        var es_GPT = "/71347885/_main_eveningstandard/es_grid";
+
+        if (screen.width >= 1280) {
+            fn_pageskin = "yes";
+        }
+
+        googletag.cmd.push(function() {
+            googletag.defineSlot(es_GPT, [
+                    [728, 90],
+                    [970, 250]
+                ], "leaderboard")
+                .addService(googletag.pubads())
+                .setTargeting("inskin", fn_pageskin)
+                .setTargeting("tile", "leaderboard");
+
+            googletag.defineOutOfPageSlot(es_GPT, "outofpageslot")
+                .addService(googletag.pubads())
+                .setTargeting("tile", "outofpageslot");
+
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -30,217 +59,267 @@
     </div>
     <div id="backgroundTop" data-ism-event="1" data-ism-state="1">
     </div>
+    <!--<div id="leaderboard">
+        <script>
+            googletag.cmd.push(function() {
+                googletag.display("leaderboard");
+            });
+        </script>
+    </div>-->
     <div class="container">
-        <div class="grid-12 title1">
-            <img src="img/title-row.png" class="desktop" />
-            <img src="img/title-row-mob.png" class="mobile" />
-        </div>
-        <div class="grid-9 fixed">
-            <img src="img/hero-main.png" class="desktop" />
-            <img src="img/hero-main-mob.png" class="mobile" />
-            <div class="nest">
-                <div class="grid-6 full">
-                    <img src="img/hero-article1.png" class="desktop" />
-                    <img src="img/hero-article1-mob.png" class="mobile" />
-                </div>
-                <div class="grid-6 full">
-                    <img src="img/hero-article2.png" class="desktop" />
-                    <img src="img/hero-article2-mob.png" class="mobile" />
+        <div class="container">
+            <div class="grid-12 title1">
+                <img src="img/title-row.png" class="desktop" />
+                <img src="img/title-row-mob.png" class="mobile" />
+            </div>
+            <div class="grid-9 fixed">
+                <img src="img/hero-main.png" class="desktop" />
+                <img src="img/hero-main-mob.png" class="mobile" />
+                <div class="nest">
+                    <div class="grid-6 full">
+                        <img src="img/hero-article1.png" class="desktop" />
+                        <img src="img/hero-article1-mob.png" class="mobile" />
+                    </div>
+                    <div class="grid-6 full">
+                        <img src="img/hero-article2.png" class="desktop" />
+                        <img src="img/hero-article2-mob.png" class="mobile" />
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="grid-3 mpu hero-dmpu">
+            <div id="mpu0">
+                <script>
+                    googletag.cmd.push(function() {
+                        googletag.display("mpu0");
+                    });
+                </script>
+            </div>
+            <!--<div class="grid-3 mpu hero-dmpu">
             <img src="img/mpu.png" class="desktop" />
             <img src="img/mpu2.png" class="mobile" />
-        </div>
-        <div class="grid-4 article-3">
-            <img src="img/article-3-1.png" class="no-tablet-no-mob" />
-            <img src="img/article-3-1-mob.png" class="mobile" />
-            <img src="img/article-3-1-tab.png" class="tablet" />
-        </div>
-        <div class="grid-4 article-3">
-            <img src="img/article-3-2.png" class="no-tablet-no-mob" />
-            <img src="img/article-3-2-mob.png" class="mobile" />
-            <img src="img/article-3-2-tab.png" class="tablet" />
-        </div>
-        <div class="grid-4 article-3">
-            <img src="img/article-3-3.png" class="no-tablet-no-mob" />
-            <!--<img src="img/article-3-3-mob.png" class="mobile" />-->
-            <img src="img/article-3-3-tab.png" class="tablet" />
-        </div>
-        <div style="clear:both"></div>
-        <div class="grid-12">
-            <img src="img/title-row1.png" class="desktop" />
-            <img src="img/title-row1-mob.png" class="mobile" />
-        </div>
-        <div class="grid-4 article-3 mpu2">
+        </div>-->
+            <div class="grid-4 article-3">
+                <img src="img/article-3-1.png" class="no-tablet-no-mob" />
+                <img src="img/article-3-1-mob.png" class="mobile" />
+                <img src="img/article-3-1-tab.png" class="tablet" />
+            </div>
+            <div class="grid-4 article-3">
+                <img src="img/article-3-2.png" class="no-tablet-no-mob" />
+                <img src="img/article-3-2-mob.png" class="mobile" />
+                <img src="img/article-3-2-tab.png" class="tablet" />
+            </div>
+            <div class="grid-4 article-3">
+                <img src="img/article-3-3.png" class="no-tablet-no-mob" />
+                <!--<img src="img/article-3-3-mob.png" class="mobile" />-->
+                <img src="img/article-3-3-tab.png" class="tablet" />
+            </div>
+            <div style="clear:both"></div>
+            <div class="grid-12">
+                <img src="img/title-row1.png" class="desktop" />
+                <img src="img/title-row1-mob.png" class="mobile" />
+            </div>
+            <div id="mpu05">
+                <script>
+                    googletag.cmd.push(function() {
+                        googletag.display("mpu05");
+                    });
+                </script>
+            </div>
+            <!--<div class="grid-4 article-3 mpu2">
             <img src="img/ES-tickets.png" />
-        </div>
-        <div class="grid-4 article-3 half-tablet">
-            <img src="img/article-3-4.png" class="no-tablet-no-mob" />
-            <img src="img/article-3-4-mob.png" class="tablet" />
-            <img src="img/article-3-4-2mob.png" class="mobile" />
-        </div>
-        <div class="grid-4 article-3 half-tablet">
-            <img src="img/article-3-5.png" class="no-tablet-no-mob" />
-            <img src="img/article-3-4-mob.png" class="tablet" />
-            <img src="img/article-3-5-mob.png" class="mobile" />
-        </div>
-        <div style="clear:both"></div>
-        <div class="grid-4 article-3 half-tablet">
-            <img src="img/article-3-6.png" class="no-tablet-no-mob" />
-            <img src="img/article-3-4-mob.png" class="tablet" />
-            <img src="img/article-3-6-mob.png" class="mobile" />
-        </div>
-        <div class="clear-tablet"></div>
-        <div class="grid-4 article-3 half-tablet">
-            <img src="img/article-3-7.png" class="no-tablet-no-mob" />
-            <img src="img/article-3-4-mob.png" class="tablet" />
-            <img src="img/article-3-7-mob.png" class="mobile" />
-        </div>
-        <div class="grid-4 article-3 mpu1 left">
+        </div>-->
+            <div class="grid-4 article-3 half-tablet">
+                <img src="img/article-3-4.png" class="no-tablet-no-mob" />
+                <img src="img/article-3-4-mob.png" class="tablet" />
+                <img src="img/article-3-4-2mob.png" class="mobile" />
+            </div>
+            <div class="grid-4 article-3 half-tablet">
+                <img src="img/article-3-5.png" class="no-tablet-no-mob" />
+                <img src="img/article-3-4-mob.png" class="tablet" />
+                <img src="img/article-3-5-mob.png" class="mobile" />
+            </div>
+            <div style="clear:both"></div>
+            <div class="grid-4 article-3 half-tablet">
+                <img src="img/article-3-6.png" class="no-tablet-no-mob" />
+                <img src="img/article-3-4-mob.png" class="tablet" />
+                <img src="img/article-3-6-mob.png" class="mobile" />
+            </div>
+            <div class="clear-tablet"></div>
+            <div class="grid-4 article-3 half-tablet">
+                <img src="img/article-3-7.png" class="no-tablet-no-mob" />
+                <img src="img/article-3-4-mob.png" class="tablet" />
+                <img src="img/article-3-7-mob.png" class="mobile" />
+            </div>
+            <div id="mpu04">
+                <script>
+                    googletag.cmd.push(function() {
+                        googletag.display("mpu04");
+                    });
+                </script>
+            </div>
+            <!--<div class="grid-4 article-3 mpu1 left">
             <img src="img/mpu2.png" class="margin-top-minus-150" />
-        </div>
-        <div class="grid-12">
-            <img src="img/mega-video.png" class="desktop" />
-            <img src="img/mega-video-mob.png" class="mobile" />
-        </div>
-        <div class="grid-9 fixed">
-            <img src="img/showbiz1.png" class="no-tablet-no-mob" />
-            <img src="img/showbiz1-mob.png" class="mobile" />
-            <img src="img/showbiz1-tab.png" class="tablet" />
-            <div class="nest">
-                <div class="grid-6 half">
-                    <img src="img/showbiz2.png" class="no-tablet-no-mob" />
-                    <img src="img/showbiz2-mob.png" class="mobile" />
-                    <img src="img/showbiz2-tab.png" class="tablet" />
-                </div>
-                <div class="grid-6 half">
-                    <img src="img/showbiz3.png" class="no-tablet-no-mob" />
-                    <img src="img/showbiz3-mob.png" class="mobile" />
-                    <img src="img/showbiz3-tab.png" class="tablet" />
+        </div>-->
+            <div class="grid-12">
+                <img src="img/mega-video.png" class="desktop" />
+                <img src="img/mega-video-mob.png" class="mobile" />
+            </div>
+            <div class="grid-9 fixed">
+                <img src="img/showbiz1.png" class="no-tablet-no-mob" />
+                <img src="img/showbiz1-mob.png" class="mobile" />
+                <img src="img/showbiz1-tab.png" class="tablet" />
+                <div class="nest">
+                    <div class="grid-6 half">
+                        <img src="img/showbiz2.png" class="no-tablet-no-mob" />
+                        <img src="img/showbiz2-mob.png" class="mobile" />
+                        <img src="img/showbiz2-tab.png" class="tablet" />
+                    </div>
+                    <div class="grid-6 half">
+                        <img src="img/showbiz3.png" class="no-tablet-no-mob" />
+                        <img src="img/showbiz3-mob.png" class="mobile" />
+                        <img src="img/showbiz3-tab.png" class="tablet" />
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="grid-3 mpu hero-dmpu">
+            <div id="mpu01">
+                <script>
+                    googletag.cmd.push(function() {
+                        googletag.display("mpu01");
+                    });
+                </script>
+            </div>
+            <!--<div class="grid-3 mpu hero-dmpu">
             <img src="img/mpu.png" class="desktop" />
             <img src="img/mpu2.png" class="mobile" />
-        </div>
-        <div class="grid-12">
-            <img src="img/title-row2.png" class="desktop" />
-            <img src="img/title-row2-mob.png" class="mobile" />
-        </div>
-        <div class="grid-6">
-            <img src="img/hero-article3.png" class="no-tablet-no-mob" />
-            <img src="img/hero-article3-mob.png" class="mobile" />
-            <img src="img/hero-article3-tab.png" class="tablet" />
-        </div>
-        <div class="grid-6">
-            <img src="img/article-list.png" class="no-tablet-no-mob" />
-            <img src="img/article-list-mob.png" class="mobile" />
-            <img src="img/article-list-tab.png" class="tablet" />
-        </div>
-        <div style="clear:both"></div>
-        <div class="grid-3 mpu hero-dmpu">
+        </div>-->
+            <div class="grid-12">
+                <img src="img/title-row2.png" class="desktop" />
+                <img src="img/title-row2-mob.png" class="mobile" />
+            </div>
+            <div class="grid-6">
+                <img src="img/hero-article3.png" class="no-tablet-no-mob" />
+                <img src="img/hero-article3-mob.png" class="mobile" />
+                <img src="img/hero-article3-tab.png" class="tablet" />
+            </div>
+            <div class="grid-6">
+                <img src="img/article-list.png" class="no-tablet-no-mob" />
+                <img src="img/article-list-mob.png" class="mobile" />
+                <img src="img/article-list-tab.png" class="tablet" />
+            </div>
+            <div style="clear:both"></div>
+            <div id="mpu02">
+                <script>
+                    googletag.cmd.push(function() {
+                        googletag.display("mpu02");
+                    });
+                </script>
+            </div>
+            <!--<div class="grid-3 mpu hero-dmpu">
             <img src="img/mpu.png" class="desktop" />
             <img src="img/mpu2.png" class="mobile" />
-        </div>
-        <div class="grid-9 fixed">
-            <img src="img/showbiz4.png" class="no-tablet-no-mob" />
-            <img src="img/showbiz4-mob.png" class="mobile" />
-            <img src="img/showbiz1-tab.png" class="tablet" />
-            <div class="nest">
-                <div class="grid-6 half">
-                    <img src="img/showbiz5.png" class="no-tablet-no-mob" />
-                    <img src="img/showbiz5-mob.png" class="mobile" />
-                    <img src="img/showbiz2-tab.png" class="tablet" />
-                </div>
-                <div class="grid-6 half">
-                    <img src="img/showbiz6.png" class="no-tablet-no-mob" />
-                    <img src="img/showbiz6-mob.png" class="mobile" />
-                    <img src="img/showbiz3-tab.png" class="tablet" />
+        </div>-->
+            <div class="grid-9 fixed">
+                <img src="img/showbiz4.png" class="no-tablet-no-mob" />
+                <img src="img/showbiz4-mob.png" class="mobile" />
+                <img src="img/showbiz1-tab.png" class="tablet" />
+                <div class="nest">
+                    <div class="grid-6 half">
+                        <img src="img/showbiz5.png" class="no-tablet-no-mob" />
+                        <img src="img/showbiz5-mob.png" class="mobile" />
+                        <img src="img/showbiz2-tab.png" class="tablet" />
+                    </div>
+                    <div class="grid-6 half">
+                        <img src="img/showbiz6.png" class="no-tablet-no-mob" />
+                        <img src="img/showbiz6-mob.png" class="mobile" />
+                        <img src="img/showbiz3-tab.png" class="tablet" />
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="grid-12">
-            <img src="img/comment.png" class="desktop" />
-            <img src="img/comment1-mob.png" class="mobile" />
-        </div>
-        <div class="grid-12">
-            <img src="img/title-row3.png" class="desktop" />
-            <img src="img/title-row3-mob.png" class="mobile" />
-        </div>
-        <div class="grid-3 article-4 half">
-            <img src="img/sport1.png" class="no-tablet-no-mob" />
-            <img src="img/sport1-mob.png" class="mobile" />
-            <img src="img/sport1-tab.png" class="tablet" />
-        </div>
-        <div class="grid-3 article-4 half">
-            <img src="img/sport2.png" class="no-tablet-no-mob" />
-            <img src="img/sport2-mob.png" class="mobile" />
-            <img src="img/sport2-tab.png" class="tablet" />
-        </div>
-        <div class="grid-3 article-4 half">
-            <img src="img/sport3.png" class="no-tablet-no-mob" />
-            <img src="img/sport3-mob.png" class="mobile" />
-            <img src="img/sport3-tab.png" class="tablet" />
-        </div>
-        <div class="grid-3 article-4 half">
-            <img src="img/sport4.png" class="no-tablet-no-mob" />
-            <img src="img/sport4-mob.png" class="mobile" />
-            <img src="img/sport4-tab.png" class="tablet" />
-        </div>
-        <div class="grid-12 title">
-            <img src="img/title-row4.png" class="desktop" />
-            <img src="img/title-row4-mob.png" class="mobile" />
-        </div>
-        <div class="grid-12">
-            <img src="img/full-hero.png" class="desktop" />
-            <img src="img/full-hero-mob.png" class="mobile" />
-        </div>
-        <div class="grid-4 article-3">
-            <img src="img/going-out1.png" class="no-tablet" />
-            <img src="img/going-out1-tab.png" class="tablet" />
-        </div>
-        <div class="grid-4 article-3">
-            <img src="img/going-out2.png" class="no-tablet" />
-            <img src="img/going-out1-tab.png" class="tablet" />
-        </div>
-        <div class="grid-4 article-3">
-            <img src="img/going-out3.png" class="no-tablet" />
-            <img src="img/going-out1-tab.png" class="tablet" />
-        </div>
+            <div class="grid-12">
+                <img src="img/comment.png" class="desktop" />
+                <img src="img/comment1-mob.png" class="mobile" />
+            </div>
+            <div class="grid-12">
+                <img src="img/title-row3.png" class="desktop" />
+                <img src="img/title-row3-mob.png" class="mobile" />
+            </div>
+            <div class="grid-3 article-4 half">
+                <img src="img/sport1.png" class="no-tablet-no-mob" />
+                <img src="img/sport1-mob.png" class="mobile" />
+                <img src="img/sport1-tab.png" class="tablet" />
+            </div>
+            <div class="grid-3 article-4 half">
+                <img src="img/sport2.png" class="no-tablet-no-mob" />
+                <img src="img/sport2-mob.png" class="mobile" />
+                <img src="img/sport2-tab.png" class="tablet" />
+            </div>
+            <div class="grid-3 article-4 half">
+                <img src="img/sport3.png" class="no-tablet-no-mob" />
+                <img src="img/sport3-mob.png" class="mobile" />
+                <img src="img/sport3-tab.png" class="tablet" />
+            </div>
+            <div class="grid-3 article-4 half">
+                <img src="img/sport4.png" class="no-tablet-no-mob" />
+                <img src="img/sport4-mob.png" class="mobile" />
+                <img src="img/sport4-tab.png" class="tablet" />
+            </div>
+            <div class="grid-12 title">
+                <img src="img/title-row4.png" class="desktop" />
+                <img src="img/title-row4-mob.png" class="mobile" />
+            </div>
+            <div class="grid-12">
+                <img src="img/full-hero.png" class="desktop" />
+                <img src="img/full-hero-mob.png" class="mobile" />
+            </div>
+            <div class="grid-4 article-3">
+                <img src="img/going-out1.png" class="no-tablet" />
+                <img src="img/going-out1-tab.png" class="tablet" />
+            </div>
+            <div class="grid-4 article-3">
+                <img src="img/going-out2.png" class="no-tablet" />
+                <img src="img/going-out1-tab.png" class="tablet" />
+            </div>
+            <div class="grid-4 article-3">
+                <img src="img/going-out3.png" class="no-tablet" />
+                <img src="img/going-out1-tab.png" class="tablet" />
+            </div>
 
-        <div class="grid-12">
-            <img src="img/trending.png" class="no-tablet-no-mob" />
-            <img src="img/trending-mob.png" class="mobile" />
-            <img src="img/trending-tab.png" class="tablet" />
+            <div class="grid-12">
+                <img src="img/trending.png" class="no-tablet-no-mob" />
+                <img src="img/trending-mob.png" class="mobile" />
+                <img src="img/trending-tab.png" class="tablet" />
+            </div>
+            <div class="grid-12">
+                <img src="img/title-row5.png" class="desktop" />
+                <img src="img/title-row5-mob.png" class="mobile" />
+            </div>
+            <div class="grid-3 article-4">
+                <img src="img/best1.png" class="no-tablet-no-mob" />
+                <img src="img/best1-mob.png" class="mobile" />
+                <img src="img/best1-tab.png" class="tablet" />
+            </div>
+            <div class="grid-3 article-4">
+                <img src="img/best2.png" class="no-tablet-no-mob" />
+                <img src="img/best2-mob.png" class="mobile" />
+                <img src="img/best2-tab.png" class="tablet" />
+            </div>
+            <div class="grid-3 article-4">
+                <img src="img/best3.png" class="no-tablet-no-mob" />
+                <img src="img/best3-mob.png" class="mobile" />
+                <img src="img/best3-tab.png" class="tablet" />
+            </div>
+            <div class="grid-3 article-4">
+                <img src="img/best4.png" class="no-tablet-no-mob" />
+                <img src="img/best4-mob.png" class="mobile" />
+                <img src="img/best4-tab.png" class="tablet" />
+            </div>
         </div>
-        <div class="grid-12">
-            <img src="img/title-row5.png" class="desktop" />
-            <img src="img/title-row5-mob.png" class="mobile" />
+        <div id="outofpageslot">
+            <script>
+                googletag.cmd.push(function() {
+                    googletag.display("outofpageslot");
+                });
+            </script>
         </div>
-        <div class="grid-3 article-4">
-            <img src="img/best1.png" class="no-tablet-no-mob" />
-            <img src="img/best1-mob.png" class="mobile" />
-            <img src="img/best1-tab.png" class="tablet" />
-        </div>
-        <div class="grid-3 article-4">
-            <img src="img/best2.png" class="no-tablet-no-mob" />
-            <img src="img/best2-mob.png" class="mobile" />
-            <img src="img/best2-tab.png" class="tablet" />
-        </div>
-        <div class="grid-3 article-4">
-            <img src="img/best3.png" class="no-tablet-no-mob" />
-            <img src="img/best3-mob.png" class="mobile" />
-            <img src="img/best3-tab.png" class="tablet" />
-        </div>
-        <div class="grid-3 article-4">
-            <img src="img/best4.png" class="no-tablet-no-mob" />
-            <img src="img/best4-mob.png" class="mobile" />
-            <img src="img/best4-tab.png" class="tablet" />
-        </div>
-    </div>
 </body>
 
 </html>

@@ -179,6 +179,54 @@ img {
     z-index: -1;
 }
 
+#leaderboard {
+    overflow: hidden;
+    z-index: -1;
+    margin: 90px 0 20px 0;
+    text-align: center;
+}
+
+#mpu0 {
+    padding-top: 75px;
+}
+
+#mpu01 {
+    padding: 10px 0 0 10px;
+    width: 310px;
+    margin: 0 auto;
+    float: right;
+}
+
+#mpu02 {
+    padding: 10px 20px 0 10px;
+    width: 320px;
+    margin: 0 auto;
+    float: left
+}
+
+#mpu05 {
+    padding: 10px 20px 0 10px;
+    width: 320px;
+    margin: 0 auto;
+    float: left
+}
+
+#mpu04 {
+    padding: 10px 20px 0 10px;
+    width: 320px;
+    margin: 0 auto;
+    float: left
+}
+
+#backgroundTop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url("../img/skin-main.png") no-repeat center;
+    z-index: -1;
+}
+
 #backgroundRoll {
     max-width: 980px;
     /*height: 246px;*/
