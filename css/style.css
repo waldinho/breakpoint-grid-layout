@@ -37,6 +37,7 @@ img {
     background: #000;
     width: 100%;
     text-align: center;
+    z-index: 99999999999;
 }
 
 .nav-img {
